@@ -10,7 +10,7 @@ export function Event() {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex flex-1">
-        <Video lessonSlug={slug} />
+        {slug !== undefined && <Video lessonSlug={slug} />}
         <Sidebar />
       </main>
     </div>
